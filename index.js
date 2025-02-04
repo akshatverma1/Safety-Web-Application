@@ -17,3 +17,6 @@ app.listen(1000,()=>{
 app.get("/",(req,res)=>{
     res.render("index");
 })
+app.get("/data",(req,res)=>{
+    res.json();
+})
