@@ -1,0 +1,12 @@
+h1{
+    color: rgb(255, 255, 255);
+}
+#DisplayMap{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid blanchedalmond;
+}
+body{
+    background-color: black;
+}
