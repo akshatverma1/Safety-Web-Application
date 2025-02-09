@@ -1,4 +1,8 @@
+
 console.log("Script File");
+var now = moment().format('YYYY-MM-DD HH:mm:ss');
+console.log(now);
+
 
 const greenIcon = L.icon({
     iconUrl: 'https://img.icons8.com/ios-filled/50/ff0000/circled-dot.png',
@@ -11,7 +15,7 @@ const greenIcon = L.icon({
 if (navigator.geolocation) {
     navigator.geolocation.watchPosition((position) => {
         const { latitude, longitude } = position.coords;
-        console.log(latitude + " " + longitude);
+        // console.log(latitude + " " + longitude);
         const map = L.map('DisplayMap').setView([latitude, longitude], 19);
         L.marker([latitude, longitude]).addTo(map);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -27,11 +31,11 @@ if (navigator.geolocation) {
                 console.log(datas.Delhi_Areas);
                 const deldata = datas.Delhi_Areas;
                 deldata.forEach(element => {
-                    console.log(element.latitude);
+                    // console.log(element.latitude);
                     // L.marker([element.latitude, element.longitude],{icon: greenIcon}).addTo(map).bindPopup(element.message);
                     if (element.safety_grade == "A") {
                         L.circle([element.latitude, element.longitude], {
-                            radius: 1000,
+                            radius: 1500,
                             color: "green"
                         }).addTo(map).bindPopup(element.name);
                     }else if(element.safety_grade =="B"){
@@ -62,7 +66,7 @@ if (navigator.geolocation) {
                 console.log(datas.Indore_Areas);
                 const deldata = datas.Indore_Areas;
                 deldata.forEach(element => {
-                    console.log(element.latitude);
+                    // console.log(element.latitude);
                     // L.marker([element.latitude, element.longitude],{icon: greenIcon}).addTo(map).bindPopup(element.message);
                     if (element.safety_grade == "A") {
                         L.circle([element.latitude, element.longitude], {
@@ -102,4 +106,3 @@ if (navigator.geolocation) {
         datafechIndore();
     })
 }
-

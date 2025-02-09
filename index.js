@@ -10,6 +10,11 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));
 
 
+const { DateTime } = require('luxon');
+const now = DateTime.local();
+console.log('Current Date and Time:', now.toFormat("HH:mm:ss"));
+
+
 app.listen(1000,()=>{
     console.log("Server is On");
 })

@@ -1,704 +1,340 @@
+
 {
-    "Indore_Areas": [
-      {
-        "count": 1,
-        "name": "Vijay Nagar",
-        "latitude": 22.7533,
-        "longitude": 75.8985,
-        "safety_grade": "A"
-      },
-      {
-        "count": 2,
-        "name": "Rajwada",
-        "latitude": 22.7179,
-        "longitude": 75.8333,
-        "safety_grade": "B"
-      },
-      {
-        "count": 3,
-        "name": "Palasia",
-        "latitude": 22.7250,
-        "longitude": 75.8794,
-        "safety_grade": "A"
-      },
-      {
-        "count": 4,
-        "name": "M G Road",
-        "latitude": 22.7196,
-        "longitude": 75.8577,
-        "safety_grade": "B"
-      },
-      {
-        "count": 5,
-        "name": "Bhawarkuan",
-        "latitude": 22.6900,
-        "longitude": 75.8651,
-        "safety_grade": "C"
-      },
-      {
-        "count": 6,
-        "name": "Sudama Nagar",
-        "latitude": 22.6833,
-        "longitude": 75.8500,
-        "safety_grade": "B"
-      },
-      {
-        "count": 7,
-        "name": "Tilak Nagar",
-        "latitude": 22.7353,
-        "longitude": 75.9035,
-        "safety_grade": "A"
-      },
-      {
-        "count": 8,
-        "name": "Sapna Sangeeta",
-        "latitude": 22.7215,
-        "longitude": 75.8507,
-        "safety_grade": "B"
-      },
-      {
-        "count": 9,
-        "name": "LIG Colony",
-        "latitude": 22.7300,
-        "longitude": 75.8800,
-        "safety_grade": "A"
-      },
-      {
-        "count": 10,
-        "name": "Scheme No. 54",
-        "latitude": 22.7562,
-        "longitude": 75.9005,
-        "safety_grade": "A"
-      },
-      {
-        "count": 11,
-        "name": "Nehru Park",
-        "latitude": 22.7240,
-        "longitude": 75.8550,
-        "safety_grade": "B"
-      },
-      {
-        "count": 12,
-        "name": "Chhota Bangarda",
-        "latitude": 22.6880,
-        "longitude": 75.8700,
-        "safety_grade": "C"
-      },
-      {
-        "count": 13,
-        "name": "Sukhliya",
-        "latitude": 22.7060,
-        "longitude": 75.8830,
-        "safety_grade": "B"
-      },
-      {
-        "count": 14,
-        "name": "Bhanwarkuan",
-        "latitude": 22.6885,
-        "longitude": 75.8655,
-        "safety_grade": "C"
-      },
-      {
-        "count": 15,
-        "name": "Rau",
-        "latitude": 22.7065,
-        "longitude": 75.8000,
-        "safety_grade": "A"
-      },
-      {
-        "count": 16,
-        "name": "Kanchan Bagh",
-        "latitude": 22.7350,
-        "longitude": 75.8700,
-        "safety_grade": "B"
-      },
-      {
-        "count": 17,
-        "name": "Saraswati Nagar",
-        "latitude": 22.7400,
-        "longitude": 75.8500,
-        "safety_grade": "A"
-      },
-      {
-        "count": 18,
-        "name": "Vijay Nagar Extension",
-        "latitude": 22.7580,
-        "longitude": 75.8950,
-        "safety_grade": "A"
-      },
-      {
-        "count": 19,
-        "name": "Bengali Square",
-        "latitude": 22.7245,
-        "longitude": 75.8555,
-        "safety_grade": "B"
-      },
-      {
-        "count": 20,
-        "name": "Sukhliya Extension",
-        "latitude": 22.7100,
-        "longitude": 75.8900,
-        "safety_grade": "C "},
-      {
-        "count": 21,
-        "name": "Kesar Bagh",
-        "latitude": 22.7405,
-        "longitude": 75.8600,
-        "safety_grade": "A"
-      },
-      {
-        "count": 22,
-        "name": "Mahalaxmi Nagar",
-        "latitude": 22.6950,
-        "longitude": 75.8450,
-        "safety_grade": "B"
-      },
-      {
-        "count": 23,
-        "name": "Saraswati Vihar",
-        "latitude": 22.7305,
-        "longitude": 75.8955,
-        "safety_grade": "A"
-      },
-      {
-        "count": 24,
-        "name": "Vijay Nagar Main",
-        "latitude": 22.7540,
-        "longitude": 75.9000,
-        "safety_grade": "B"
-      },
-      {
-        "count": 25,
-        "name": "Shivaji Nagar",
-        "latitude": 22.7105,
-        "longitude": 75.8705,
-        "safety_grade": "C"
-      },
-      {
-        "count": 26,
-        "name": "Nanda Nagar",
-        "latitude": 22.6880,
-        "longitude": 75.8550,
-        "safety_grade": "B"
-      },
-      {
-        "count": 27,
-        "name": "Nehru Nagar",
-        "latitude": 22.7255,
-        "longitude": 75.8605,
-        "safety_grade": "A"
-      },
-      {
-        "count": 28,
-        "name": "Narmada Road",
-        "latitude": 22.7400,
-        "longitude": 75.8800,
-        "safety_grade": "B"
-      },
-      {
-        "count": 29,
-        "name": "Nehru Garden",
-        "latitude": 22.7150,
-        "longitude": 75.8450,
-        "safety_grade": "A"
-      },
-      {
-        "count": 30,
-        "name": "Saraswati Nagar Extension",
-        "latitude": 22.7355,
-        "longitude": 75.8555,
-        "safety_grade": "C"
-      }
-      ,
-      {
-        "count": 31,
-        "name": "Vijay Nagar South",
-        "latitude": 22.7500,
-        "longitude": 75.8950,
-        "safety_grade": "A"
-      },
-      {
-        "count": 32,
-        "name": "Rani Sati Nagar",
-        "latitude": 22.6800,
-        "longitude": 75.8600,
-        "safety_grade": "B"
-      },
-      {
-        "count": 33,
-        "name": "Sukhliya Main",
-        "latitude": 22.7100,
-        "longitude": 75.8850,
-        "safety_grade": "A"
-      },
-      {
-        "count": 34,
-        "name": "Bhanwarkuan Extension",
-        "latitude": 22.6905,
-        "longitude": 75.8705,
-        "safety_grade": "C"
-      },
-      {
-        "count": 35,
-        "name": "Shivaji Park",
-        "latitude": 22.7200,
-        "longitude": 75.8555,
-        "safety_grade": "B"
-      },
-      {
-        "count": 36,
-        "name": "Mangal Nagar",
-        "latitude": 22.7400,
-        "longitude": 75.8450,
-        "safety_grade": "A"
-      },
-      {
-        "count": 37,
-        "name": "Saraswati Nagar South",
-        "latitude": 22.7300,
-        "longitude": 75.8650,
-        "safety_grade": "B"
-      },
-      {
-        "count": 38,
-        "name": "Kanchan Nagar",
-        "latitude": 22.6950,
-        "longitude": 75.8555,
-        "safety_grade": "C"
-      },
-      {
-        "count": 39,
-        "name": "Rau Extension",
-        "latitude": 22.7105,
-        "longitude": 75.8050,
-        "safety_grade": "A"
-      },
-      {
-        "count": 40,
-        "name": "Sukhliya Bypass",
-        "latitude": 22.7150,
-        "longitude": 75.8905,
-        "safety_grade": "B"
-      },
-      {
-        "count": 41,
-        "name": "Mahalaxmi Extension",
-        "latitude": 22.6955,
-        "longitude": 75.8400,
-        "safety_grade": "C"
-      },
-      {
-        "count": 42,
-        "name": "Narmada Nagar",
-        "latitude": 22.7300,
-        "longitude": 75.8700,
-        "safety_grade": "A"
-      },
-      {
-        "count": 43,
-        "name": "Vijay Nagar West",
-        "latitude": 22.7550,
-        "longitude": 75.8955,
-        "safety_grade": "B"
-      },
-      {
-        "count": 44,
-        "name": "Bhawarkuan Main",
-        "latitude": 22.6880,
-        "longitude": 75.8650,
-        "safety_grade": "C"
-      },
-      {
-        "count": 45,
-        "name": "Nehru Nagar Extension",
-        "latitude": 22.7250,
-        "longitude": 75.8655,
-        "safety_grade": "A"
-      },
-      {
-        "count": 46,
-        "name": "Saraswati Vihar Extension",
-        "latitude": 22.7350,
-        "longitude": 75.8950,
-        "safety_grade": "B"
-      },
-      {
-        "count": 47,
-        "name": "Kesar Bagh Extension",
-        "latitude": 22.7400,
-        "longitude": 75.8550,
-        "safety_grade": "A"
-      },
-      {
-        "count": 48,
-        "name": "Shivaji Nagar Extension",
-        "latitude": 22.7100,
-        "longitude": 75.8750,
-        "safety_grade": "C"
-      },
-      {
-        "count": 49,
-        "name": "Narmada Road Extension",
-        "latitude": 22.7450,
-        "longitude": 75.8850,
-        "safety_grade": "B"
-      },
-      {
-        "count": 50,
-        "name": "Indore City Center",
-        "latitude": 22.7200,
-        "longitude": 75.8500,
-        "safety_grade": "A"
-      },
-   {
-        "count": 51,
-        "name": "Vijay Nagar North",
-        "latitude": 22.7520,
-        "longitude": 75.8920,
-        "safety_grade": "A"
-      },
-      {
-        "count": 52,
-        "name": "Rani Sati Extension",
-        "latitude": 22.6820,
-        "longitude": 75.8620,
-        "safety_grade": "B"
-      },
-      {
-        "count": 53,
-        "name": "Sukhliya South",
-        "latitude": 22.7120,
-        "longitude": 75.8870,
-        "safety_grade": "A"
-      },
-      {
-        "count": 54,
-        "name": "Bhanwarkuan South",
-        "latitude": 22.6910,
-        "longitude": 75.8720,
-        "safety_grade": "C"
-      },
-      {
-        "count": 55,
-        "name": "Shivaji Nagar South",
-        "latitude": 22.7110,
-        "longitude": 75.8680,
-        "safety_grade": "B"
-      },
-      {
-        "count": 56,
-        "name": "Mangal Nagar Extension",
-        "latitude": 22.7420,
-        "longitude": 75.8470,
-        "safety_grade": "A"
-      },
-      {
-        "count": 57,
-        "name": "Saraswati Nagar West",
-        "latitude": 22.7310,
-        "longitude": 75.8660,
-        "safety_grade": "B"
-      },
-      {
-        "count": 58,
-        "name": "Kanchan Nagar Extension",
-        "latitude": 22.6960,
-        "longitude": 75.8560,
-        "safety_grade": "C"
-      },
-      {
-        "count": 59,
-        "name": "Rau South",
-        "latitude": 22.7115,
-        "longitude": 75.8060,
-        "safety_grade": "A"
-      },
-      {
-        "count": 60,
-        "name": "Sukhliya North",
-        "latitude": 22.7160,
-        "longitude": 75.8910,
-        "safety_grade": "B"
-      },
-      {
-        "count": 61,
-        "name": "Mahalaxmi South",
-        "latitude": 22.6965,
-        "longitude": 75.8410,
-        "safety_grade": "C"
-      },
-      {
-        "count": 62,
-        "name": "Narmada East",
-        "latitude": 22.7315,
-        "longitude": 75.8710,
-        "safety_grade": "A"
-      },
-      {
-        "count": 63,
-        "name": "Vijay Nagar East",
-        "latitude": 22.7560,
-        "longitude": 75.8960,
-        "safety_grade": "B"
-      },
-      {
-        "count": 64,
-        "name": "Bhawarkuan East",
-        "latitude": 22.6890,
-        "longitude": 75.8660,
-        "safety_grade": "C"
-      },
-      {
-        "count": 65,
-        "name": "Nehru Nagar South",
-        "latitude": 22.7260,
-        "longitude": 75.8670,
-        "safety_grade": "A"
-      },
-      {
-        "count": 66,
-        "name": "Saraswati Vihar North",
-        "latitude": 22.7360,
-        "longitude": 75.8960,
-        "safety_grade": "B"
-      },
-      {
-        "count": 67,
-        "name": "Kesar Bagh South",
-        "latitude": 22.7410,
-        "longitude": 75.8570,
-        "safety_grade": "A"
-      },
-      {
-        "count": 68,
-        "name": "Shivaji Nagar North",
-        "latitude": 22.7125,
-        "longitude": 75.8760,
-        "safety_grade": "C"
-      },
-      {
-        "count": 69,
-        "name": "Narmada Road South",
-        "latitude": 22.7460,
-        "longitude": 75.8860,
-        "safety_grade": "B"
-      },
-      {
-        "count": 70,
-        "name": "Indore Central",
-        "latitude": 22.7215,
-        "longitude": 75.8515,
-        "safety_grade": "A"
-      },
-      {
-        "count": 71,
-        "name": "Vijay Nagar Central",
-        "latitude": 22.7525,
-        "longitude": 75.8940,
-        "safety_grade": "A"
-      },
-      {
-        "count": 72,
-        "name": "Rani Sati South",
-        "latitude": 22.6815,
-        "longitude": 75.8615,
-        "safety_grade": "B"
-      },
-      {
-        "count": 73,
-        "name": "Sukhliya West",
-        "latitude": 22.7115,
-        "longitude": 75.8865,
-        "safety_grade": "A"
-      },
-      {
-        "count": 74,
-        "name": "Bhanwarkuan North",
-        "latitude": 22.6900,
-        "longitude": 75.8715,
-        "safety_grade": "C"
-      },
-      {
-        "count": 75,
-        "name": "Shivaji Nagar West",
-        "latitude": 22.7105,
-        "longitude": 75.8675,
-        "safety_grade": "B"
-      },
-      {
-        "count": 76,
-        "name": "Mangal Nagar South",
-        "latitude": 22.7415,
-        "longitude": 75.8465,
-        "safety_grade": "A"
-      },
-      {
-        "count": 77,
-        "name": "Saraswati Nagar East",
-        "latitude": 22.7320,
-        "longitude": 75.8655,
-        "safety_grade": "B"
-      },
-      {
-        "count": 78,
-        "name": "Kanchan Nagar South",
-        "latitude": 22.6965,
-        "longitude": 75.8575,
-        "safety_grade": "C"
-      },
-      {
-        "count": 79,
-        "name": "Rau North",
-        "latitude": 22.7120,
-        "longitude": 75.8070,
-        "safety_grade": "A"
-      },
-      {
-        "count": 80,
-        "name": "Sukhliya South Extension",
-        "latitude": 22.7155,
-        "longitude": 75.8900,
-        "safety_grade": "B"
-      },
-      {
-        "count": 81,
-        "name": "Mahalaxmi North",
-        "latitude": 22.6970,
-        "longitude": 75.8420,
-        "safety_grade": "C"
-      },
-      {
-        "count": 82,
-        "name": "Narmada West",
-        "latitude": 22.7320,
-        "longitude": 75.8720,
-        "safety_grade": "A"
-      },
-      {
-        "count": 83,
-        "name": "Vijay Nagar North Extension",
-        "latitude": 22.7545,
-        "longitude": 75.8955,
-        "safety_grade": "B"
-      },
-      {
-        "count": 84,
-        "name": "Bhawarkuan North",
-        "latitude": 22.6895,
-        "longitude": 75.8670,
-        "safety_grade": "C"
-      },
-      {
-        "count": 85,
-        "name": "Nehru Nagar North",
-        "latitude": 22.7270,
-        "longitude": 75.8680,
-        "safety_grade": "A"
-      },
-      {
-        "count": 86,
-        "name": "Saraswati Vihar South",
-        "latitude": 22.7370,
-        "longitude": 75.8970,
-        "safety_grade": "B"
-      },
-      {
-        "count": 87,
-        "name": "Kesar Bagh North",
-        "latitude": 22.7425,
-        "longitude": 75.8580,
-        "safety_grade": "A"
-      },
-      {
-        "count": 88,
-        "name": "Shivaji Nagar East",
-        "latitude": 22.7130,
-        "longitude": 75.8770,
-        "safety_grade": "C"
-      },
-      {
-        "count": 89,
-        "name": "Narmada Road West",
-        "latitude": 22.7470,
-        "longitude": 75.8870,
-        "safety_grade": "B"
-      },
-      {
-        "count": 90,
-        "name": "Indore South",
-        "latitude": 22.7220,
-        "longitude": 75.8520,
-        "safety_grade ": "A"
-      },
-      {
-        "count": 91,
-        "name": "Vijay Nagar South Extension",
-        "latitude": 22.7510,
-        "longitude": 75.8945,
-        "safety_grade": "B"
-      },
-      {
-        "count": 92,
-        "name": "Rani Sati North",
-        "latitude": 22.6795,
-        "longitude": 75.8605,
-        "safety_grade": "C"
-      },
-      {
-        "count": 93,
-        "name": "Sukhliya East",
-        "latitude": 22.7105,
-        "longitude": 75.8855,
-        "safety_grade": "A"
-      },
-      {
-        "count": 94,
-        "name": "Bhanwarkuan East",
-        "latitude": 22.6890,
-        "longitude": 75.8700,
-        "safety_grade": "B"
-      },
-      {
-        "count": 95,
-        "name": "Shivaji Nagar Central",
-        "latitude": 22.7110,
-        "longitude": 75.8685,
-        "safety_grade": "C"
-      },
-      {
-        "count": 96,
-        "name": "Mangal Nagar North",
-        "latitude": 22.7405,
-        "longitude": 75.8455,
-        "safety_grade": "A"
-      },
-      {
-        "count": 97,
-        "name": "Saraswati Nagar Central",
-        "latitude": 22.7325,
-        "longitude": 75.8665,
-        "safety_grade": "B"
-      },
-      {
-        "count": 98,
-        "name": "Kanchan Nagar North",
-        "latitude": 22.6955,
-        "longitude": 75.8550,
-        "safety_grade": "C"
-      },
-      {
-        "count": 99,
-        "name": "Rau Central",
-        "latitude": 22.7110,
-        "longitude": 75.8080,
-        "safety_grade": "A"
-      },
-      {
-        "count": 100,
-        "name": "Sukhliya Central",
-        "latitude": 22.7150,
-        "longitude": 75.8890,
-        "safety_grade": "B"
-      }
-    ]
-  }
+  "Indore_Areas": [
+    {
+      "count": 1,
+      "name": "Vijay Nagar",
+      "latitude": 22.7533,
+      "longitude": 75.8985,
+      "safety_grade": "A"
+    },
+    {
+      "count": 2,
+      "name": "Rajwada",
+      "latitude": 22.7179,
+      "longitude": 75.8333,
+      "safety_grade": "B"
+    },
+    {
+      "count": 3,
+      "name": "Palasia",
+      "latitude": 22.7250,
+      "longitude": 75.8794,
+      "safety_grade": "A"
+    },
+    {
+      "count": 4,
+      "name": "M G Road",
+      "latitude": 22.7196,
+      "longitude": 75.8577,
+      "safety_grade": "B"
+    },
+    {
+      "count": 5,
+      "name": "Bhawarkuan",
+      "latitude": 22.6900,
+      "longitude": 75.8651,
+      "safety_grade": "C"
+    },
+    {
+      "count": 6,
+      "name": "Sudama Nagar",
+      "latitude": 22.6833,
+      "longitude": 75.8500,
+      "safety_grade": "B"
+    },
+    {
+      "count": 7,
+      "name": "Tilak Nagar",
+      "latitude": 22.7353,
+      "longitude": 75.9035,
+      "safety_grade": "A"
+    },
+    {
+      "count": 8,
+      "name": "Sapna Sangeeta",
+      "latitude": 22.7215,
+      "longitude": 75.8507,
+      "safety_grade": "B"
+    },
+    {
+      "count": 9,
+      "name": "LIG Colony",
+      "latitude": 22.7300,
+      "longitude": 75.8800,
+      "safety_grade": "A"
+    },
+    {
+      "count": 10,
+      "name": "Scheme No. 54",
+      "latitude": 22.7562,
+      "longitude": 75.9005,
+      "safety_grade": "A"
+    },
+    {
+      "count": 11,
+      "name": "Nehru Park",
+      "latitude": 22.7240,
+      "longitude": 75.8550,
+      "safety_grade": "B"
+    },
+    {
+      "count": 12,
+      "name": "Chhota Bangarda",
+      "latitude": 22.6880,
+      "longitude": 75.8700,
+      "safety_grade": "C"
+    },
+    {
+      "count": 13,
+      "name": "Sukhliya",
+      "latitude": 22.7060,
+      "longitude": 75.8830,
+      "safety_grade": "B"
+    },
+    {
+      "count": 14,
+      "name": "Bhanwarkuan",
+      "latitude": 22.6885,
+      "longitude": 75.8655,
+      "safety_grade": "C"
+    },
+    {
+      "count": 15,
+      "name": "Rau",
+      "latitude": 22.7065,
+      "longitude": 75.8000,
+      "safety_grade": "A"
+    },
+    {
+      "count": 16,
+      "name": "Kanchan Bagh",
+      "latitude": 22.7350,
+      "longitude": 75.8700,
+      "safety_grade": "B"
+    },
+    {
+      "count": 17,
+      "name": "Saraswati Nagar",
+      "latitude": 22.7400,
+      "longitude": 75.8500,
+      "safety_grade": "A"
+    },
+    {
+      "count": 18,
+      "name": "Vijay Nagar Extension",
+      "latitude": 22.7580,
+      "longitude": 75.8950,
+      "safety_grade": "A"
+    },
+    {
+      "count": 19,
+      "name": "Bengali Square",
+      "latitude": 22.7245,
+      "longitude": 75.8555,
+      "safety_grade": "B"
+    },
+    {
+      "count": 20,
+      "name": "Sukhliya Extension",
+      "latitude": 22.7100,
+      "longitude": 75.8900,
+      "safety_grade": "C"
+    },
+    {
+      "count": 21,
+      "name": "Kesar Bagh",
+      "latitude": 22.7405,
+      "longitude": 75.8600,
+      "safety_grade": "A"
+    },
+    {
+      "count": 22,
+      "name": "Mahalaxmi Nagar",
+      "latitude": 22.6950,
+      "longitude": 75.8450,
+      "safety_grade": "B"
+    },
+    {
+      "count": 23,
+      "name": "Saraswati Vihar",
+      "latitude": 22.7305,
+      "longitude": 75.8955,
+      "safety_grade": "A"
+    },
+    {
+      "count": 24,
+      "name": "Vijay Nagar Main",
+      "latitude": 22.7540,
+      "longitude": 75.9000,
+      "safety_grade": "B"
+    },
+    {
+      "count": 25,
+      "name": "Shivaji Nagar",
+      "latitude": 22.7105,
+      "longitude": 75.8705,
+      "safety_grade": "C"
+    },
+    {
+      "count": 26,
+      "name": "Nanda Nagar",
+      "latitude": 22.6880,
+      "longitude": 75.8550,
+      "safety_grade": "B"
+    },
+    {
+      "count": 27,
+      "name": "Nehru Nagar",
+      "latitude": 22.7255,
+      "longitude": 75.8605,
+      "safety_grade": "A"
+    },
+    {
+      "count": 28,
+      "name": "Narmada Road",
+      "latitude": 22.7400,
+      "longitude": 75.8800,
+      "safety_grade": "B"
+    },
+    {
+      "count": 29,
+      "name": "Nehru Garden",
+      "latitude": 22.7150,
+      "longitude": 75.8450,
+      "safety_grade": "A"
+    },
+    {
+      "count": 30,
+      "name": "Saraswati Nagar Extension",
+      "latitude": 22.7355,
+      "longitude": 75.8555,
+      "safety_grade": "C"
+    },
+    {
+      "count": 31,
+      "name": "Vijay Nagar South",
+      "latitude": 22.7500,
+      "longitude": 75.8950,
+      "safety_grade": "A"
+    },
+    {
+      "count": 32,
+      "name": "Rani Sati Nagar",
+      "latitude": 22.6800,
+      "longitude": 75.8600,
+      "safety_grade": "B"
+    },
+    {
+      "count": 33,
+      "name": "Sukhliya Main",
+      "latitude": 22.7100,
+      "longitude": 75.8850,
+      "safety_grade": "A"
+    },
+    {
+      "count": 34,
+      "name": "Bhanwarkuan Extension",
+      "latitude": 22.6905,
+      "longitude": 75.8705,
+      "safety_grade": "C"
+    },
+    {
+      "count": 35,
+      "name": "Shivaji Park",
+      "latitude": 22.7200,
+      "longitude": 75.8555,
+      "safety_grade": "B"
+    },
+    {
+      "count": 36,
+      "name": "Mangal Nagar",
+      "latitude": 22.7400,
+      "longitude": 75.8450,
+      "safety_grade": "A"
+    },
+    {
+      "count": 37,
+      "name": "Saraswati Nagar South",
+      "latitude": 22.7300,
+      "longitude": 75.8650,
+      "safety_grade": "B"
+    },
+    {
+      "count": 38,
+      "name": "Kanchan Nagar",
+      "latitude": 22.6950,
+      "longitude": 75.8555,
+      "safety_grade": "C"
+    },
+    {
+      "count": 39,
+      "name": "Rau Extension",
+      "latitude": 22.7105,
+      "longitude": 75.8050,
+      "safety_grade": "A"
+    },
+    {
+      "count": 40,
+      "name": "Sukhliya Bypass",
+      "latitude": 22.7150,
+      "longitude": 75.8905,
+      "safety_grade": "B"
+    },
+    {
+      "count": 41,
+      "name": "Mahalaxmi Extension",
+      "latitude": 22.6955,
+      "longitude": 75.8400,
+      "safety_grade": "C"
+    },
+    {
+      "count": 42,
+      "name": "Narmada Nagar",
+      "latitude": 22.7300,
+      "longitude": 75.8700,
+      "safety_grade": "A"
+    },
+    {
+      "count": 43,
+      "name": "Vijay Nagar West",
+      "latitude": 22.7550,
+      "longitude": 75.8955,
+      "safety_grade": "B"
+    },
+    {
+      "count": 44,
+      "name": "Bhawarkuan Main",
+      "latitude": 22.6880,
+      "longitude": 75.8650,
+      "safety_grade": "C"
+    },
+    {
+      "count": 45,
+      "name": "Nehru Nagar Extension",
+      "latitude": 22.7250,
+      "longitude": 75.8655,
+      "safety_grade": "A"
+    },
+    {
+      "count": 46,
+      "name": "Saraswati Vihar Extension",
+      "latitude": 22.7350,
+      "longitude": 75.8950,
+      "safety_grade": "B"
+    },
+    {
+      "count": 47,
+      "name": "Kesar Bagh Extension",
+      "latitude": 22.7400,
+      "longitude": 75.8550,
+      "safety_grade": "A"
+    },
+    {
+      "count": 48,
+      "name": "Shivaji Nagar Extension",
+      "latitude": 22.7100,
+      "longitude": 75.8750,
+      "safety_grade": "C"
+    }
+]}
