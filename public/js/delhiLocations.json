@@ -1,187 +1,935 @@
 {
     "Delhi_Areas": [
-      {
-        "count": 1,
-        "name": "Connaught Place",
-        "latitude": 28.6315,
-        "longitude": 77.2167,
-        "safety_grade": "B"
-      },
-      {
-        "count": 2,
-        "name": "Karol Bagh",
-        "latitude": 28.6510,
-        "longitude": 77.1904,
-        "safety_grade": "C"
-      },
-      {
-        "count": 3,
-        "name": "Paharganj",
-        "latitude": 28.6437,
-        "longitude": 77.2135,
-        "safety_grade": "D"
-      },
-      {
-        "count": 4,
-        "name": "Daryaganj",
-        "latitude": 28.6484,
-        "longitude": 77.2418,
-        "safety_grade": "C"
-      },
-      {
-        "count": 5,
-        "name": "Civil Lines",
-        "latitude": 28.6818,
-        "longitude": 77.2220,
-        "safety_grade": "B"
-      },
-      {
-        "count": 6,
-        "name": "Model Town",
-        "latitude": 28.7093,
-        "longitude": 77.1887,
-        "safety_grade": "B"
-      },
-      {
-        "count": 7,
-        "name": "Kamla Nagar",
-        "latitude": 28.6746,
-        "longitude": 77.2051,
-        "safety_grade": "B"
-      },
-      {
-        "count": 8,
-        "name": "Azadpur",
-        "latitude": 28.7072,
-        "longitude": 77.1865,
-        "safety_grade": "C"
-      },
-      {
-        "count": 9,
-        "name": "Saket",
-        "latitude": 28.5225,
-        "longitude": 77.2071,
-        "safety_grade": "A"
-      },
-      {
-        "count": 10,
-        "name": "Hauz Khas",
-        "latitude": 28.5494,
-        "longitude": 77.1995,
-        "safety_grade": "A"
-      },
-      {
-        "count": 11,
-        "name": "Greater Kailash",
-        "latitude": 28.5480,
-        "longitude": 77.2373,
-        "safety_grade": "A"
-      },
-      {
-        "count": 12,
-        "name": "Lajpat Nagar",
-        "latitude": 28.5673,
-        "longitude": 77.2434,
-        "safety_grade": "B"
-      },
-      {
-        "count": 13,
-        "name": "Vasant Kunj",
-        "latitude": 28.5204,
-        "longitude": 77.1552,
-        "safety_grade": "A"
-      },
-      {
-        "count": 14,
-        "name": "Preet Vihar",
-        "latitude": 28.6304,
-        "longitude": 77.2923,
-        "safety_grade": "B"
-      },
-      {
-        "count": 15,
-        "name": "Mayur Vihar",
-        "latitude": 28.6078,
-        "longitude": 77.3022,
-        "safety_grade": "B"
-      },
-      {
-        "count": 16,
-        "name": "Laxmi Nagar",
-        "latitude": 28.6310,
-        "longitude": 77.2763,
-        "safety_grade": "C"
-      },
-      {
-        "count": 17,
-        "name": "Shahdara",
-        "latitude": 28.6724,
-        "longitude": 77.2910,
-        "safety_grade": "C"
-      },
-      {
-        "count": 18,
-        "name": "Rajouri Garden",
-        "latitude": 28.6514,
-        "longitude": 77.1235,
-        "safety_grade": "B"
-      },
-      {
-        "count": 19,
-        "name": "Janakpuri",
-        "latitude": 28.6133,
-        "longitude": 77.0872,
-        "safety_grade": "B"
-      },
-      {
-        "count": 20,
-        "name": "Uttam Nagar",
-        "latitude": 28.6210,
-        "longitude": 77.0565,
-        "safety_grade": "C"
-      },
-      {
-        "count": 21,
-        "name": "Punjabi Bagh",
-        "latitude": 28.6721,
-        "longitude": 77.1318,
-        "safety_grade": "B"
-      },
-      {
-        "count": 22,
-        "name": "Chandni Chowk",
-        "latitude": 28.6562,
-        "longitude": 77.2300,
-        "safety_grade": "C"
-      },
-      {
-        "count": 23,
-        "name": "Rohini",
-        "latitude": 28.7383,
-        "longitude": 77.0922,
-        "safety_grade": "B"
-      },
-      {
-        "count": 24,
-        "name": "Pitampura",
-        "latitude": 28.6996,
-        "longitude": 77.1364,
-        "safety_grade": "B"
-      },
-      {
-        "count": 25,
-        "name": "Dwarka",
-        "latitude": 28.5904,
-        "longitude": 77.0551,
-        "safety_grade": "A"
-      },
-      {
-        "count": 26,
-        "name": "Najafgarh",
-        "latitude": 28.6096,
-        "longitude": 76.9798,
-        "safety_grade": "C"
-      }
+        {
+            "count": 1,
+            "name": "Connaught Place",
+            "latitude": 28.6315,
+            "longitude": 77.2167,
+            "safety_grade": "B"
+        },
+        {
+            "count": 2,
+            "name": "Karol Bagh",
+            "latitude": 28.6510,
+            "longitude": 77.1904,
+            "safety_grade": "C"
+        },
+        {
+            "count": 3,
+            "name": "Paharganj",
+            "latitude": 28.6437,
+            "longitude": 77.2135,
+            "safety_grade": "D"
+        },
+        {
+            "count": 4,
+            "name": "Daryaganj",
+            "latitude": 28.6484,
+            "longitude": 77.2418,
+            "safety_grade": "C"
+        },
+        {
+            "count": 5,
+            "name": "Civil Lines",
+            "latitude": 28.6818,
+            "longitude": 77.2220,
+            "safety_grade": "B"
+        },
+        {
+            "count": 6,
+            "name": "Model Town",
+            "latitude": 28.7093,
+            "longitude": 77.1887,
+            "safety_grade": "B"
+        },
+        {
+            "count": 7,
+            "name": "Kamla Nagar",
+            "latitude": 28.6746,
+            "longitude": 77.2051,
+            "safety_grade": "B"
+        },
+        {
+            "count": 8,
+            "name": "Azadpur",
+            "latitude": 28.7072,
+            "longitude": 77.1865,
+            "safety_grade": "C"
+        },
+        {
+            "count": 9,
+            "name": "Saket",
+            "latitude": 28.5225,
+            "longitude": 77.2071,
+            "safety_grade": "A"
+        },
+        {
+            "count": 10,
+            "name": "Hauz Khas",
+            "latitude": 28.5494,
+            "longitude": 77.1995,
+            "safety_grade": "A"
+        },
+        {
+            "count": 11,
+            "name": "Greater Kailash",
+            "latitude": 28.5480,
+            "longitude": 77.2373,
+            "safety_grade": "A"
+        },
+        {
+            "count": 12,
+            "name": "Lajpat Nagar",
+            "latitude": 28.5673,
+            "longitude": 77.2434,
+            "safety_grade": "B"
+        },
+        {
+            "count": 13,
+            "name": "Vasant Kunj",
+            "latitude": 28.5204,
+            "longitude": 77.1552,
+            "safety_grade": "A"
+        },
+        {
+            "count": 14,
+            "name": "Preet Vihar",
+            "latitude": 28.6304,
+            "longitude": 77.2923,
+            "safety_grade": "B"
+        },
+        {
+            "count": 15,
+            "name": "Mayur Vihar",
+            "latitude": 28.6078,
+            "longitude": 77.3022,
+            "safety_grade": "B"
+        },
+        {
+            "count": 16,
+            "name": "Laxmi Nagar",
+            "latitude": 28.6310,
+            "longitude": 77.2763,
+            "safety_grade": "C"
+        },
+        {
+            "count": 17,
+            "name": "Shahdara",
+            "latitude": 28.6724,
+            "longitude": 77.2910,
+            "safety_grade": "C"
+        },
+        {
+            "count": 18,
+            "name": "Rajouri Garden",
+            "latitude": 28.6514,
+            "longitude": 77.1235,
+            "safety_grade": "B"
+        },
+        {
+            "count": 19,
+            "name": "Janakpuri",
+            "latitude": 28.6133,
+            "longitude": 77.0872,
+            "safety_grade": "B"
+        },
+        {
+            "count": 20,
+            "name": "Uttam Nagar",
+            "latitude": 28.6210,
+            "longitude": 77.0565,
+            "safety_grade": "C"
+        },
+        {
+            "count": 21,
+            "name": "Dwarka",
+            "latitude": 28.5904,
+            "longitude": 77.0551,
+            "safety_grade": "A"
+        },
+        {
+            "count": 22,
+            "name": "Najafgarh",
+            "latitude": 28.6096,
+            "longitude": 76.9798,
+            "safety_grade": "C"
+        },
+        {
+            "count": 23,
+            "name": "Rohini",
+            "latitude": 28.7405,
+            "longitude": 77.0670,
+            "safety_grade": "B"
+        },
+        {
+            "count": 24,
+            "name": "Pitampura",
+            "latitude": 28.6986,
+            "longitude": 77.1385,
+            "safety_grade": "B"
+        },
+        {
+            "count": 25,
+            "name": "Ashok Vihar",
+            "latitude": 28.6989,
+            "longitude": 77.1842,
+            "safety_grade": "B"
+        },
+        {
+            "count": 26,
+            "name": "Paschim Vihar",
+            "latitude": 28.6744,
+            "longitude": 77.0913,
+            "safety_grade": "B"
+        },
+        {
+            "count": 27,
+            "name": "Nehru Place",
+            "latitude": 28.5486,
+            "longitude": 77.2517,
+            "safety_grade": "A"
+        },
+        {
+            "count": 28,
+            "name": "South Extension",
+            "latitude": 28.5685,
+            "longitude": 77.2256,
+            "safety_grade": "A"
+        },
+        {
+            "count": 29,
+            "name": "Chandni Chowk",
+            "latitude": 28.6506,
+            "longitude": 77.2245,
+            "safety_grade": "C"
+        },
+        {
+            "count": 30,
+            "name": "Khan Market",
+            "latitude": 28.5906,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 31,
+            "name": "Green Park",
+            "latitude": 28.5635,
+            "longitude": 77.2020,
+            "safety_grade": "B"
+        },
+        {
+            "count": 32,
+            "name": "Defence Colony",
+            "latitude": 28.5820,
+            "longitude": 77.2280,
+            "safety_grade": "A"
+        },
+        {
+            "count": 33,
+            "name": "Sarai Rohilla",
+            "latitude": 28.6530,
+            "longitude": 77.2050,
+            "safety_grade": "C"
+        },
+        {
+            "count": 34,
+            "name": "Kalkaji",
+            "latitude": 28.5535,
+            "longitude": 77.2500,
+            "safety_grade": "B"
+        },
+        {
+            "count": 35,
+            "name": "Moti Nagar",
+            "latitude": 28.6340,
+            "longitude": 77.1390,
+            "safety_grade": "B"
+        },
+        {
+            "count": 36,
+            "name": "Vikas Puri",
+            "latitude": 28.6170,
+            "longitude": 77.0930,
+            "safety_grade": "B"
+        },
+        {
+            "count": 37,
+            "name": "Shivaji Park",
+            "latitude": 28.6460,
+            "longitude": 77.1740,
+            "safety_grade": "C"
+        },
+        {
+            "count": 38,
+            "name": "Nangloi",
+            "latitude": 28.6750,
+            "longitude": 77.0590,
+            "safety_grade": "C"
+        },
+        {
+            "count": 39,
+            "name": "Kapashera",
+            "latitude": 28.5160,
+            "longitude": 77.0860,
+            "safety_grade": "B"
+        },
+        {
+            "count": 40,
+            "name": "Sultanpur",
+            "latitude": 28.5165,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 41,
+            "name": "Bawana",
+            "latitude": 28.7430,
+            "longitude": 77.0630,
+            "safety_grade": "C"
+        },
+        {
+            "count": 42,
+            "name": "Kanjhawala",
+            "latitude": 28.7060,
+            "longitude": 77.0630,
+            "safety_grade": "C"
+        },
+        {
+            "count": 43,
+            "name": "Rohini Sector 7",
+            "latitude": 28.7400,
+            "longitude": 77.1300,
+            "safety_grade": "B"
+        },
+        {
+            "count": 44,
+            "name": "Rohini Sector 9",
+            "latitude": 28.7405,
+            "longitude": 77.1305,
+            "safety_grade": "B"
+        },
+        {
+            "count": 45,
+            "name": "Sadar Bazaar",
+            "latitude": 28.6550,
+            "longitude": 77.2260,
+            "safety_grade": "C"
+        },
+        {
+            "count": 46,
+            "name": "Lodhi Colony",
+            "latitude": 28.5880,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 47,
+            "name": "Faridabad",
+            "latitude": 28.4082,
+            "longitude": 77.3172,
+            "safety_grade": "B"
+        },
+        {
+            "count": 48,
+            "name": "Noida",
+            "latitude": 28.5355,
+            "longitude": 77.3910,
+            "safety_grade": "B"
+        },
+        {
+            "count": 49,
+            "name": "Gurgaon",
+            "latitude": 28.4595,
+            "longitude": 77.0266,
+            "safety_grade": "B"
+        },
+        {
+            "count": 50,
+            "name": "Dwarka Sector 21",
+            "latitude": 28.5900,
+            "longitude": 77.0670,
+            "safety_grade": "A"
+        },
+        {
+            "count": 52,
+            "name": "Khanpur",
+            "latitude": 28.5530,
+            "longitude": 77.2230,
+            "safety_grade": "B"
+        },
+        {
+            "count": 53,
+            "name": "Mundka",
+            "latitude": 28.6750,
+            "longitude": 77.0590,
+            "safety_grade": "C"
+        },
+        {
+            "count": 54,
+            "name": "Shahpur Jat",
+            "latitude": 28.5580,
+            "longitude": 77.1970,
+            "safety_grade": "B"
+        },
+        {
+            "count": 56,
+            "name": "Kapashera",
+            "latitude": 28.5165,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 57,
+            "name": "Khan Market",
+            "latitude": 28.5906,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 58,
+            "name": "Chattarpur",
+            "latitude": 28.4870,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 59,
+            "name": "Sangam Vihar",
+            "latitude": 28.5260,
+            "longitude": 77.2270,
+            "safety_grade": "C"
+        },
+        {
+            "count": 61,
+            "name": "Bawana",
+            "latitude": 28.7430,
+            "longitude": 77.0630,
+            "safety_grade": "C"
+        },
+        {
+            "count": 62,
+            "name": "Narela",
+            "latitude": 28.7400,
+            "longitude": 77.0660,
+            "safety_grade": "C"
+        },
+        {
+            "count": 63,
+            "name": "Kapashera",
+            "latitude": 28.5160,
+            "longitude": 77.0860,
+            "safety_grade": "B"
+        },
+        {
+            "count": 64,
+            "name": "Sultanpur",
+            "latitude": 28.5165,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 66,
+            "name": "Shahdara",
+            "latitude": 28.6724,
+            "longitude": 77.2910,
+            "safety_grade": "C"
+        },
+        {
+            "count": 67,
+            "name": "Kalkaji",
+            "latitude": 28.5535,
+            "longitude": 77.2500,
+            "safety_grade": "B"
+        },
+        {
+            "count": 68,
+            "name": "Defence Colony",
+            "latitude": 28.5820,
+            "longitude": 77.2280,
+            "safety_grade": "A"
+        },
+        {
+            "count": 69,
+            "name": "Green Park",
+            "latitude": 28.5635,
+            "longitude": 77.2020,
+            "safety_grade": "B"
+        },
+        {
+            "count": 70,
+            "name": "Chandni Chowk",
+            "latitude": 28.6506,
+            "longitude": 77.2245,
+            "safety_grade": "C"
+        },
+        {
+            "count": 72,
+            "name": "Lajpat Nagar",
+            "latitude": 28.5673,
+            "longitude": 77.2434,
+            "safety_grade": "B"
+        },
+        {
+            "count": 73,
+            "name": "Vasant Kunj",
+            "latitude": 28.5204,
+            "longitude": 77.1552,
+            "safety_grade": "A"
+        },
+        {
+            "count": 74,
+            "name": "Dwarka",
+            "latitude": 28.5904,
+            "longitude": 77.0551,
+            "safety_grade": "A"
+        },
+        {
+            "count": 75,
+            "name": "Rajouri Garden",
+            "latitude": 28.6514,
+            "longitude": 77.1235,
+            "safety_grade": "B"
+        },
+        {
+            "count": 76,
+            "name": "Janakpuri",
+            "latitude": 28.6133,
+            "longitude": 77.0872,
+            "safety_grade": "B"
+        },
+        {
+            "count": 77,
+            "name": "Uttam Nagar",
+            "latitude": 28.6210,
+            "longitude": 77.0565,
+            "safety_grade": "C"
+        },
+        {
+            "count": 79,
+            "name": "Rohini Sector 10",
+            "latitude": 28.7405,
+            "longitude": 77.1305,
+            "safety_grade": "B"
+        },
+        {
+            "count": 80,
+            "name": "Rohini Sector 11",
+            "latitude": 28.7400,
+            "longitude": 77.1300,
+            "safety_grade": "B"
+        },
+        {
+            "count": 82,
+            "name": "Lodhi Garden",
+            "latitude": 28.5880,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 83,
+            "name": "Faridabad Sector 15",
+            "latitude": 28.4082,
+            "longitude": 77.3172,
+            "safety_grade": "B"
+        },
+        {
+            "count": 84,
+            "name": "Noida Sector 18",
+            "latitude": 28.5355,
+            "longitude": 77.3910,
+            "safety_grade": "B"
+        },
+        {
+            "count": 85,
+            "name": "Gurgaon Sector 14",
+            "latitude": 28.4595,
+            "longitude": 77.0266,
+            "safety_grade": "B"
+        },
+        {
+            "count": 86,
+            "name": "Dwarka Sector 22",
+            "latitude": 28.5900,
+            "longitude": 77.0670,
+            "safety_grade": "A"
+        },
+        {
+            "count": 87,
+            "name": "Sarai Rohilla",
+            "latitude": 28.6530,
+            "longitude": 77.2050,
+            "safety_grade": "C"
+        },
+        {
+            "count": 88,
+            "name": "Khanpur",
+            "latitude": 28.5530,
+            "longitude": 77.2230,
+            "safety_grade": "B"
+        },
+        {
+            "count": 90,
+            "name": "Shahpur Jat",
+            "latitude": 28.5580,
+            "longitude": 77.1970,
+            "safety_grade": "B"
+        },
+        {
+            "count": 92,
+            "name": "Sultanpur",
+            "latitude": 28.5160,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 93,
+            "name": "Chattarpur",
+            "latitude": 28.4870,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 94,
+            "name": "Sangam Vihar",
+            "latitude": 28.5260,
+            "longitude": 77.2270,
+            "safety_grade": "C"
+        },
+        {
+            "count": 96,
+            "name": "Bawana",
+            "latitude": 28.7430,
+            "longitude": 77.0630,
+            "safety_grade": "C"
+        },
+        {
+            "count": 97,
+            "name": "Narela",
+            "latitude": 28.7400,
+            "longitude": 77.0660,
+            "safety_grade": "C"
+        },
+        {
+            "count": 98,
+            "name": "Kapashera",
+            "latitude": 28.5160,
+            "longitude": 77.0860,
+            "safety_grade": "B"
+        },
+        {
+            "count": 99,
+            "name": "Sultanpur",
+            "latitude": 28.5165,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 100,
+            "name": "Mundka",
+            "latitude": 28.6750,
+            "longitude": 77.0590,
+            "safety_grade": "C"
+        },
+        {
+            "count": 102,
+            "name": "Kalkaji",
+            "latitude": 28.5535,
+            "longitude": 77.2500,
+            "safety_grade": "B"
+        },
+        {
+            "count": 103,
+            "name": "Defence Colony",
+            "latitude": 28.5820,
+            "longitude": 77.2280,
+            "safety_grade": "A"
+        },
+        {
+            "count": 104,
+            "name": "Green Park",
+            "latitude": 28.5635,
+            "longitude": 77.2020,
+            "safety_grade": "B"
+        },
+        {
+            "count": 106,
+            "name": "Khan Market",
+            "latitude": 28.5906,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 107,
+            "name": "Lajpat Nagar",
+            "latitude": 28.5673,
+            "longitude": 77.2434,
+            "safety_grade": "B"
+        },
+        {
+            "count": 108,
+            "name": "Vasant Kunj",
+            "latitude": 28.5204,
+            "longitude": 77.1552,
+            "safety_grade": "A"
+        },
+        {
+            "count": 109,
+            "name": "Dwarka",
+            "latitude": 28.5904,
+            "longitude": 77.0551,
+            "safety_grade": "A"
+        },
+        {
+            "count": 110,
+            "name": "Rajouri Garden",
+            "latitude": 28.6514,
+            "longitude": 77.1235,
+            "safety_grade": "B"
+        },
+        {
+            "count": 111,
+            "name": "Janakpuri",
+            "latitude": 28.6133,
+            "longitude": 77.0872,
+            "safety_grade": "B"
+        },
+        {
+            "count": 112,
+            "name": "Uttam Nagar",
+            "latitude": 28.6210,
+            "longitude": 77.0565,
+            "safety_grade": "C"
+        },
+        {
+            "count": 114,
+            "name": "Rohini Sector 10",
+            "latitude": 28.7405,
+            "longitude": 77.1305,
+            "safety_grade": "B"
+        },
+        {
+            "count": 115,
+            "name": "Rohini Sector 11",
+            "latitude": 28.7400,
+            "longitude": 77.1300,
+            "safety_grade": "B"
+        },
+        {
+            "count": 117,
+            "name": "Lodhi Garden",
+            "latitude": 28.5880,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 118,
+            "name": "Faridabad Sector 15",
+            "latitude": 28.4082,
+            "longitude": 77.3172,
+            "safety_grade": "B"
+        },
+        {
+            "count": 119,
+            "name": "Noida Sector 18",
+            "latitude": 28.5355,
+            "longitude": 77.3910,
+            "safety_grade": "B"
+        },
+        {
+            "count": 120,
+            "name": "Gurgaon Sector 14",
+            "latitude": 28.4595,
+            "longitude": 77.0266,
+            "safety_grade": "B"
+        },
+        {
+            "count": 121,
+            "name": "Dwarka Sector 22",
+            "latitude": 28.5900,
+            "longitude": 77.0670,
+            "safety_grade": "A"
+        },
+        {
+            "count": 123,
+            "name": "Khanpur",
+            "latitude": 28.5530,
+            "longitude": 77.2230,
+            "safety_grade": "B"
+        },
+        {
+            "count": 125,
+            "name": "Shahpur Jat",
+            "latitude": 28.5580,
+            "longitude": 77.1970,
+            "safety_grade": "B"
+        },
+        {
+            "count": 126,
+            "name": "Kapashera",
+            "latitude": 28.5165,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 127,
+            "name": "Sultanpur",
+            "latitude": 28.5160,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 128,
+            "name": "Chattarpur",
+            "latitude": 28.4870,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 130,
+            "name": "Khanpur",
+            "latitude": 28.5530,
+            "longitude": 77.2230,
+            "safety_grade": "B"
+        },
+        {
+            "count": 132,
+            "name": "Narela",
+            "latitude": 28.7400,
+            "longitude": 77.0660,
+            "safety_grade": "C"
+        },
+        {
+            "count": 134,
+            "name": "Sultanpur",
+            "latitude": 28.5165,
+            "longitude": 77.1880,
+            "safety_grade": "B"
+        },
+        {
+            "count": 135,
+            "name": "Mundka",
+            "latitude": 28.6750,
+            "longitude": 77.0590,
+            "safety_grade": "C"
+        },
+        {
+            "count": 136,
+            "name": "Shahdara",
+            "latitude": 28.6724,
+            "longitude": 77.2910,
+            "safety_grade": "C"
+        },
+        {
+            "count": 138,
+            "name": "Defence Colony",
+            "latitude": 28.5820,
+            "longitude": 77.2280,
+            "safety_grade": "A"
+        },
+        {
+            "count": 139,
+            "name": "Green Park",
+            "latitude": 28.5635,
+            "longitude": 77.2020,
+            "safety_grade": "B"
+        },
+        {
+            "count": 141,
+            "name": "Khan Market",
+            "latitude": 28.5906,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 142,
+            "name": "Lajpat Nagar",
+            "latitude": 28.5673,
+            "longitude": 77.2434,
+            "safety_grade": "B"
+        },
+        {
+            "count": 143,
+            "name": "Vasant Kunj",
+            "latitude": 28.5204,
+            "longitude": 77.1552,
+            "safety_grade": "A"
+        },
+        {
+            "count": 144,
+            "name": "Dwarka",
+            "latitude": 28.5904,
+            "longitude": 77.0551,
+            "safety_grade": "A"
+        },
+        {
+            "count": 145,
+            "name": "Rajouri Garden",
+            "latitude": 28.6514,
+            "longitude": 77.1235,
+            "safety_grade": "B"
+        },
+        {
+            "count": 146,
+            "name": "Janakpuri",
+            "latitude": 28.6133,
+            "longitude": 77.0872,
+            "safety_grade": "B"
+        },
+        {
+            "count": 147,
+            "name": "Uttam Nagar",
+            "latitude": 28.6210,
+            "longitude": 77.0565,
+            "safety_grade": "C"
+        },
+        {
+            "count": 149,
+            "name": "Rohini Sector 10",
+            "latitude": 28.7405,
+            "longitude": 77.1305,
+            "safety_grade": "B"
+        },
+        {
+            "count": 150,
+            "name": "Rohini Sector 11",
+            "latitude": 28.7400,
+            "longitude": 77.1300,
+            "safety_grade": "B"
+        },
+        {
+            "count": 152,
+            "name": "Lodhi Garden",
+            "latitude": 28.5880,
+            "longitude": 77.2270,
+            "safety_grade": "A"
+        },
+        {
+            "count": 153,
+            "name": "Faridabad Sector 15",
+            "latitude": 28.4082,
+            "longitude": 77.3172,
+            "safety_grade": "B"
+        },
+        {
+            "count": 154,
+            "name": "Noida Sector 18",
+            "latitude": 28.5355,
+            "longitude": 77.3910,
+            "safety_grade": "B"
+        },
+        {
+            "count": 155,
+            "name": "Gurgaon Sector 14",
+            "latitude": 28.4595,
+            "longitude": 77.0266,
+            "safety_grade": "B"
+        },
+        {
+            "count": 156,
+            "name": "Dwarka Sector 22",
+            "latitude": 28.5900,
+            "longitude": 77.0670,
+            "safety_grade": "A"
+        }
     ]
-  }
-  
+}
