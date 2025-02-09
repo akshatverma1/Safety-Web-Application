@@ -12,7 +12,7 @@ if (navigator.geolocation) {
     navigator.geolocation.watchPosition((position) => {
         const { latitude, longitude } = position.coords;
         console.log(latitude + " " + longitude);
-        const map = L.map('DisplayMap').setView([latitude, longitude], 13);
+        const map = L.map('DisplayMap').setView([28.6315, 77.2167], 13);
         L.marker([latitude,longitude]).addTo(map);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.akshat.life">AKSHAT</a> contributors'
@@ -22,12 +22,17 @@ if (navigator.geolocation) {
 
         async function datafech() {
             try {
-                const dataf = await fetch("./js/latlag.json");
+                const dataf = await fetch("./js/delhiLocations.json");
                 const datas = await dataf.json()
-                console.log(datas);
-                datas.forEach(element=>{
-                    console.log(element.lat);
-                    L.marker([element.lat, element.lng],{icon: greenIcon}).addTo(map).bindPopup(element.message);
+                console.log(datas.Delhi_Areas);
+                const deldata= datas.Delhi_Areas;
+                deldata.forEach(element=>{
+                    console.log(element.latitude);
+                    // L.marker([element.latitude, element.longitude],{icon: greenIcon}).addTo(map).bindPopup(element.message);
+                    L.circle([element.latitude, element.longitude],{
+                        radius: 800,
+                        color:"red"
+                    } ).addTo(map).bindPopup(element.message);
                 })
             } catch (err) {
                 console.log(err);

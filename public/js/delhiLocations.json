@@ -1,0 +1,187 @@
+{
+    "Delhi_Areas": [
+      {
+        "count": 1,
+        "name": "Connaught Place",
+        "latitude": 28.6315,
+        "longitude": 77.2167,
+        "safety_grade": "B"
+      },
+      {
+        "count": 2,
+        "name": "Karol Bagh",
+        "latitude": 28.6510,
+        "longitude": 77.1904,
+        "safety_grade": "C"
+      },
+      {
+        "count": 3,
+        "name": "Paharganj",
+        "latitude": 28.6437,
+        "longitude": 77.2135,
+        "safety_grade": "D"
+      },
+      {
+        "count": 4,
+        "name": "Daryaganj",
+        "latitude": 28.6484,
+        "longitude": 77.2418,
+        "safety_grade": "C"
+      },
+      {
+        "count": 5,
+        "name": "Civil Lines",
+        "latitude": 28.6818,
+        "longitude": 77.2220,
+        "safety_grade": "B"
+      },
+      {
+        "count": 6,
+        "name": "Model Town",
+        "latitude": 28.7093,
+        "longitude": 77.1887,
+        "safety_grade": "B"
+      },
+      {
+        "count": 7,
+        "name": "Kamla Nagar",
+        "latitude": 28.6746,
+        "longitude": 77.2051,
+        "safety_grade": "B"
+      },
+      {
+        "count": 8,
+        "name": "Azadpur",
+        "latitude": 28.7072,
+        "longitude": 77.1865,
+        "safety_grade": "C"
+      },
+      {
+        "count": 9,
+        "name": "Saket",
+        "latitude": 28.5225,
+        "longitude": 77.2071,
+        "safety_grade": "A"
+      },
+      {
+        "count": 10,
+        "name": "Hauz Khas",
+        "latitude": 28.5494,
+        "longitude": 77.1995,
+        "safety_grade": "A"
+      },
+      {
+        "count": 11,
+        "name": "Greater Kailash",
+        "latitude": 28.5480,
+        "longitude": 77.2373,
+        "safety_grade": "A"
+      },
+      {
+        "count": 12,
+        "name": "Lajpat Nagar",
+        "latitude": 28.5673,
+        "longitude": 77.2434,
+        "safety_grade": "B"
+      },
+      {
+        "count": 13,
+        "name": "Vasant Kunj",
+        "latitude": 28.5204,
+        "longitude": 77.1552,
+        "safety_grade": "A"
+      },
+      {
+        "count": 14,
+        "name": "Preet Vihar",
+        "latitude": 28.6304,
+        "longitude": 77.2923,
+        "safety_grade": "B"
+      },
+      {
+        "count": 15,
+        "name": "Mayur Vihar",
+        "latitude": 28.6078,
+        "longitude": 77.3022,
+        "safety_grade": "B"
+      },
+      {
+        "count": 16,
+        "name": "Laxmi Nagar",
+        "latitude": 28.6310,
+        "longitude": 77.2763,
+        "safety_grade": "C"
+      },
+      {
+        "count": 17,
+        "name": "Shahdara",
+        "latitude": 28.6724,
+        "longitude": 77.2910,
+        "safety_grade": "C"
+      },
+      {
+        "count": 18,
+        "name": "Rajouri Garden",
+        "latitude": 28.6514,
+        "longitude": 77.1235,
+        "safety_grade": "B"
+      },
+      {
+        "count": 19,
+        "name": "Janakpuri",
+        "latitude": 28.6133,
+        "longitude": 77.0872,
+        "safety_grade": "B"
+      },
+      {
+        "count": 20,
+        "name": "Uttam Nagar",
+        "latitude": 28.6210,
+        "longitude": 77.0565,
+        "safety_grade": "C"
+      },
+      {
+        "count": 21,
+        "name": "Punjabi Bagh",
+        "latitude": 28.6721,
+        "longitude": 77.1318,
+        "safety_grade": "B"
+      },
+      {
+        "count": 22,
+        "name": "Chandni Chowk",
+        "latitude": 28.6562,
+        "longitude": 77.2300,
+        "safety_grade": "C"
+      },
+      {
+        "count": 23,
+        "name": "Rohini",
+        "latitude": 28.7383,
+        "longitude": 77.0922,
+        "safety_grade": "B"
+      },
+      {
+        "count": 24,
+        "name": "Pitampura",
+        "latitude": 28.6996,
+        "longitude": 77.1364,
+        "safety_grade": "B"
+      },
+      {
+        "count": 25,
+        "name": "Dwarka",
+        "latitude": 28.5904,
+        "longitude": 77.0551,
+        "safety_grade": "A"
+      },
+      {
+        "count": 26,
+        "name": "Najafgarh",
+        "latitude": 28.6096,
+        "longitude": 76.9798,
+        "safety_grade": "C"
+      }
+    ]
+  }
+  
