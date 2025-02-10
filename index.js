@@ -10,6 +10,10 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));
 
 
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+
 const { DateTime } = require('luxon');
 const now = DateTime.local();
 console.log('Current Date and Time:', now.toFormat("HH:mm:ss"));
@@ -21,4 +25,10 @@ app.listen(1000,()=>{
 
 app.get("/",(req,res)=>{
     res.render("index");
+})
+
+app.post("/id",(req,res)=>{
+    let {userid} = req.body;
+    console.log(req.body);
+    res.send(userid);
 })
