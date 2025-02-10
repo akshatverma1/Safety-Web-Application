@@ -7,4 +7,4 @@ set SQL_SAFE_UPDATES=0;
     Emergency bigint not null,
     UserPassword bigint not null
     );    
-select * from signupfirst
+select * from signupfirst;
