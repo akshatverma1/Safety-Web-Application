@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Tracking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        .bg-gray-900 {
+            background-color: #111827;
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .space-x-4> :not([hidden])~ :not([hidden]) {
+            margin-left: 1rem;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        .hover\:bg-gray-800:hover {
+            background-color: #1f2937;
+        }
+
+        .w-10 {
+            width: 2.5rem;
+        }
+
+        .h-10 {
+            height: 2.5rem;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .p-2 {
+            padding: 0.5rem;
+        }
+
+        .w-6 {
+            width: 1.5rem;
+        }
+
+        .h-6 {
+            height: 1.5rem;
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .gap-8 {
+            gap: 2rem;
+        }
+
+        .lg\:grid-cols-3 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .lg\:col-span-2 {
+                grid-column: span 2 / span 2;
+            }
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .safety-map {
+            height: 70vh;
+            background-color: #1a1a1a;
+        }
+
+        .border-b {
+            border-bottom-width: 1px;
+        }
+
+        .border-gray-800 {
+            border-color: #1f2937;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        .text-gray-400 {
+            color: #9ca3af;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .mr-1 {
+            margin-right: 0.25rem;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="min-h-screen">
+        <header style="height: 4rem; display: flex; " class="bg-gray-900 shadow-lg">
+            <div class="container flex items-center justify-between px-4 py-4">
+                <div class="flex items-center space-x-4">
+                    <!-- <img src="https://i.pravatar.cc/150?img=68" alt="John Doe" class="w-10 h-10 rounded-full"> -->
+                    <span class="font-semibold">Hello <%= results.UserName %></span>
+                </div>
+                <!-- <nav class="flex items-center space-x-4">
+                    <button class="p-2 rounded-full hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </button>
+                    <button class="p-2 rounded-full hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </button>
+                    <button class="p-2 rounded-full hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                            <polyline points="16 17 21 12 16 7"/>
+                            <line x1="21" x2="9" y1="12" y2="12"/>
+                        </svg>
+                    </button>
+                </nav> -->
+            </div>
+        </header>
+
+        <main class="container px-4 py-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <h2 class="text-2xl font-bold mb-4">Location</h2>
+                    <div style="overflow: hidden; width: 100%; height: 100vh;" class="rounded-lg">
+                        <!-- Map container -->
+                        
+                        <iframe
+                        allow="geolocation"
+                          src="http://localhost:5173/webview"
+                          title="WebView Example"
+                          style="height: 100%; width: 100%; border: none;"
+                          overflow="hidden"
+                        >
+                    </div>
+                </div>
+                <!-- <div>
+                    <h2 class="text-2xl font-bold mb-4">Family Members</h2>
+                    <div class="bg-gray-900 rounded-lg shadow-lg p-4">
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div>
+                                <h3 class="font-semibold">Sarah Doe</h3>
+                                <p class="text-sm text-gray-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 inline mr-1">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                    Home
+                                </p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-400">Last seen</p>
+                                <p class="text-sm">2 min ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+    </div>
+    <script>
+        console.log("Hello World");
+    </script>
+</body>
+
+</html>

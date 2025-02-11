@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const mysql = require("mysql2");
+const { Console } = require("console");
 
 
 app.set("view engine", "ejs");
@@ -49,19 +50,21 @@ app.post("/signup", (req, res) => {
     myconnection.query(query, [userData], (err, results, fields) => {
         if (err) {
             console.log(err);
+            res.send("Account is not created"+" "+err);
         } else {
             console.log(results);
+            res.redirect("http://localhost:5173/webview");
         }
     })
-    res.redirect("http://localhost:5173/webview");
+   
 })
 
 app.post("/login",(req,res)=>{
     let {mobileReq,passwordReq} = req.body;
     console.log(mobileReq + " " + passwordReq);
-    let query = `select UserName from signupfirst where MobileNo in(${mobileReq}) and UserPassword in(${passwordReq})`;
+    let query = `select UserName from signupfirst where MobileNo =${mobileReq} and UserPassword =${passwordReq}`;
     myconnection.query(query, (err, results, fields) => {
-        if (err) {
+        if(results.length == 0){
             console.log("Account is not found");
             res.redirect("http://localhost:5173/signup");
         } else {
@@ -76,17 +79,16 @@ app.post("/login",(req,res)=>{
 app.get("/login/succesfully/:mobileHome/:passHome",(req,res)=>{
     let {mobileHome,passHome} = req.params;
     console.log(mobileHome+" "+passHome);
-    let query1 = `select UserName from signupfirst where MobileNo in(${mobileHome}) and UserPassword in(${passHome})`;
-    myconnection.query(query1, (err, results, fields) => {
-        if (err) {
+    let query1 = `select * from signupfirst where MobileNo =${mobileHome} AND UserPassword =${passHome}`;
+    myconnection.query(query1, (err, result, fields) => {   
+        if(result.length == 0){
             console.log("Account is not found");
+            res.send("Account is not found");
         } else {
-            let user = results[0]
-            console.log({user});
             
+            let results = result[0];
+            console.log(results);
+            res.render("Homepage",{results});
         }
     })
-    res.send("login succesfully");
 })
-
-

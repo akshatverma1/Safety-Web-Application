@@ -5,7 +5,9 @@ h1{
     background-color: black;
     width: 100%;
     height: 100vh;
-    border: 2px solid blanchedalmond;
+    /* border: 2px solid blanchedalmond; */
+    overflow: hidden;
+    border-radius: 16px;
 }
 body{
     background-color: black;
