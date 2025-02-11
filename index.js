@@ -59,17 +59,34 @@ app.post("/signup", (req, res) => {
 app.post("/login",(req,res)=>{
     let {mobileReq,passwordReq} = req.body;
     console.log(mobileReq + " " + passwordReq);
-    let query = `select * from signupfirst where MobileNo in(${mobileReq}) and UserPassword in(${passwordReq})`;
+    let query = `select UserName from signupfirst where MobileNo in(${mobileReq}) and UserPassword in(${passwordReq})`;
     myconnection.query(query, (err, results, fields) => {
         if (err) {
             console.log("Account is not found");
             res.redirect("http://localhost:5173/signup");
         } else {
             console.log(results);
-            res.redirect("http://localhost:5173/webview");
+            console.log(fields);
+            res.redirect(`http://localhost:1000/login/succesfully/${mobileReq}/${passwordReq}`);
         }
     })
    
+})
+
+app.get("/login/succesfully/:mobileHome/:passHome",(req,res)=>{
+    let {mobileHome,passHome} = req.params;
+    console.log(mobileHome+" "+passHome);
+    let query1 = `select UserName from signupfirst where MobileNo in(${mobileHome}) and UserPassword in(${passHome})`;
+    myconnection.query(query1, (err, results, fields) => {
+        if (err) {
+            console.log("Account is not found");
+        } else {
+            let user = results[0]
+            console.log({user});
+            
+        }
+    })
+    res.send("login succesfully");
 })
 
 
