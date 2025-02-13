@@ -186,6 +186,14 @@
             border: none;
             background-color: #1a1a1a;
         }
+        .emergencyCallButton{
+            background-color: red;
+            color: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -202,12 +210,13 @@
         <main>
             <div class="maindisplay">
                 <div class="callview">
-                    <button >
+                    <form action="tel:+91<%= results.Emergency %>">
+                    <button class="emergencyCallButton">
                         Emergency Call 
                      </button>
+                    </form>
                 </div>
                 <div class="mapview">
-                    
                     <iframe allow="geolocation" src="/" title="WebView Example"
                             style="height: 100vh;width: 100%;">
                 </div>
@@ -263,6 +272,7 @@
         </main> -->
     </div>
     <script>
+     
         console.log("Hello World");
     </script>
 </body>
