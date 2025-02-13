@@ -56,7 +56,6 @@ app.post("/signup", (req, res) => {
             res.redirect("http://localhost:5173/webview");
         }
     })
-   
 })
 
 app.post("/login",(req,res)=>{

@@ -163,80 +163,29 @@
         }
         .maindisplay{
             height: 100vh;
-            background-color: #1a1a1a;
+            background-color: #000000;
             margin: 1rem;
             border-radius: 1rem;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
         }
         .mapview{
-            border: 2px solid white;
-            width: 100%;
+            /* border: 2px solid white; */
             height: 100vh;
-            margin-right: 3rem;
+            width: 100%;
+            
         }
         .callview{
-            border: 2px solid white;
-            width: 400px;
+            /* border: 2px solid white; */
+            width: 200px;
             height: 100vh;
+
         }
-        /* From Uiverse.io by KINGFRESS */ 
-button {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-weight: bold;
-  color: white;
-  background-color: #ff0000;
-  padding: 1em 2em;
-  border: none;
-  border-radius: .6rem;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  width: 200px;
-    height: 33px;
-}
-
-button span:not(:nth-child(6)) {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 30px;
-  width: 30px;
-  background-color: #000000;
-  border-radius: 50%;
-  transition: .6s ease;
-}
-
-button span:nth-child(6) {
-  position: relative;
-}
-
-button span:nth-child(1) {
-  transform: translate(-3.3em, -4em);
-}
-
-button span:nth-child(2) {
-  transform: translate(-6em, 1.3em);
-}
-
-button span:nth-child(3) {
-  transform: translate(-.2em, 1.8em);
-}
-
-button span:nth-child(4) {
-  transform: translate(3.5em, 1.4em);
-}
-
-button span:nth-child(5) {
-  transform: translate(3.5em, -3.8em);
-}
-
-button:hover span:not(:nth-child(6)) {
-  transform: translate(-50%, -50%) scale(4);
-  transition: 1.5s ease;
-}
-  
+        iframe{
+            border: none;
+            background-color: #1a1a1a;
+        }
     </style>
 </head>
 
@@ -248,44 +197,21 @@ button:hover span:not(:nth-child(6)) {
                     <!-- <img src="https://i.pravatar.cc/150?img=68" alt="John Doe" class="w-10 h-10 rounded-full"> -->
                     <span class="font-semibold">Hello <%= results.UserName %></span>
                 </div>
-                <!-- <nav class="flex items-center space-x-4">
-                    <button class="p-2 rounded-full hover:bg-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
-                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-                        </svg>
-                    </button>
-                    <button class="p-2 rounded-full hover:bg-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
-                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
-                            <circle cx="12" cy="12" r="3"/>
-                        </svg>
-                    </button>
-                    <button class="p-2 rounded-full hover:bg-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
-                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
-                            <polyline points="16 17 21 12 16 7"/>
-                            <line x1="21" x2="9" y1="12" y2="12"/>
-                        </svg>
-                    </button>
-                </nav> -->
             </div>
         </header>
         <main>
             <div class="maindisplay">
-                <div class="mapview"></div>
                 <div class="callview">
-                 
-
-<button>
-    <span class="circle1"></span>
-    <span class="circle2"></span>
-    <span class="circle3"></span>
-    <span class="circle4"></span>
-    <span class="circle5"></span>
-    <span class="text">Alert</span>
-</button>
+                    <button >
+                        Emergency Call 
+                     </button>
                 </div>
+                <div class="mapview">
+                    
+                    <iframe allow="geolocation" src="/" title="WebView Example"
+                            style="height: 100vh;width: 100%;">
+                </div>
+               
             </div>
         </main>
     <!-- <main class="container px-4 py-8">
