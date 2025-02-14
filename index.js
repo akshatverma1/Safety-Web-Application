@@ -88,7 +88,8 @@ async function main() {
             } else {
                 console.log(results);
                 console.log(fields);
-                res.redirect(`http://localhost:1000/login/succesfully/${mobileReq}/${passwordReq}`);
+                // res.redirect(`http://localhost:1000/login/succesfully/${mobileReq}/${passwordReq}`);
+                res.redirect("https://www.akshat.life");
             }
         })
 
