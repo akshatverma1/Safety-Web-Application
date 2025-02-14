@@ -72,7 +72,7 @@ async function main() {
                 res.send("Account is not created" + " " + err);
             } else {
                 console.log(results);
-                res.redirect("http://localhost:5173/webview");
+                res.redirect("https://www.akshat.life");
             }
         })
     })
@@ -84,12 +84,12 @@ async function main() {
         myconnection.query(query, (err, results, fields) => {
             if (results.length == 0) {
                 console.log("Account is not found");
-                res.redirect("http://localhost:5173/signup");
+                res.redirect("https://www.akshat.life");
             } else {
                 console.log(results);
                 console.log(fields);
-                // res.redirect(`http://localhost:1000/login/succesfully/${mobileReq}/${passwordReq}`);
-                res.redirect("https://www.akshat.life");
+                res.redirect(`/login/succesfully/${mobileReq}/${passwordReq}`);
+                // res.redirect("https://www.akshat.life");
             }
         })
 
