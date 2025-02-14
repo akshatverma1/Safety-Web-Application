@@ -35,7 +35,10 @@ async function main() {
         database: process.env.MYSQL_ADDON_DB,
         password: process.env.MYSQL_ADDON_PASSWORD,
         port: process.env.MYSQL_ADDON_PORT,
-        uri: process.env.MYSQL_ADDON_URI
+        uri: process.env.MYSQL_ADDON_URI,
+        waitForConnections: true,
+        connectionLimit: 10,
+        connectTimeout: 10000,
     })
 
     myconnection.connect((err) => {
