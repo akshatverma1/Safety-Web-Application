@@ -22,6 +22,8 @@ app.use(express.json());
 // console.log('Current Date and Time:', now.toFormat("HH:mm:ss"));
 
 
+async function main(){
+
 
 
 app.listen(Port, () => {
@@ -117,5 +119,5 @@ app.get("/data", (req, res) => {
         }
     })
 })
-
-
+}
+main();
