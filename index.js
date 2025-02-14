@@ -22,93 +22,100 @@ app.use(express.json());
 // console.log('Current Date and Time:', now.toFormat("HH:mm:ss"));
 
 
-async function main() {
 
-    app.listen(Port, () => {
-        console.log("Server is On");
-    })
-    const myconnection = await mysql.createConnection({
-        host: process.env.MYSQL_ADDON_HOST,
-        user: process.env.MYSQL_ADDON_USER,
-        database: process.env.MYSQL_ADDON_DB,
-        password: process.env.MYSQL_ADDON_PASSWORD,
-        port: process.env.MYSQL_ADDON_PORT,
-        uri: process.env.MYSQL_ADDON_URI
-    })
 
-    myconnection.connect((err) => {
+app.listen(Port, () => {
+    console.log("Server is On");
+})
+const myconnection = mysql.createConnection({
+    host: process.env.MYSQL_ADDON_HOST,
+    user: process.env.MYSQL_ADDON_USER,
+    database: process.env.MYSQL_ADDON_DB,
+    password: process.env.MYSQL_ADDON_PASSWORD,
+    port: process.env.MYSQL_ADDON_PORT,
+    uri: process.env.MYSQL_ADDON_URI
+})
+
+myconnection.connect((err) => {
+    if (err) {
+        console.error("Database connection failed:", err);
+    } else {
+        console.log("Connected to MySQL Database!");
+    }
+});
+
+
+
+app.get("/", (req, res) => {
+    res.render("index");
+})
+
+app.post("/id", (req, res) => {
+    let { userid } = req.body;
+    console.log(req.body);
+    res.send(userid);
+})
+
+app.post("/signup", (req, res) => {
+    let { nameReq, mobileReq, emergencyReq, passwordReq } = req.body;
+    console.log(nameReq + " " + mobileReq + " " + emergencyReq + " " + passwordReq);
+    let query = "INSERT INTO safe (UserName,MobileNo,Emergency,UserPassword) VALUES ?";
+    let userData = [[nameReq, mobileReq, emergencyReq, passwordReq]];
+    myconnection.query(query, [userData], (err, results, fields) => {
         if (err) {
-            console.error("Database connection failed:", err);
+            console.log(err);
+            res.send("Account is not created" + " " + err);
         } else {
-            console.log("Connected to MySQL Database!");
+            console.log(results);
+            res.redirect("http://localhost:5173/webview");
         }
-    });
+    })
+})
 
-
-
-    app.get("/", (req, res) => {
-        res.render("index");
+app.post("/login", (req, res) => {
+    let { mobileReq, passwordReq } = req.body;
+    console.log(mobileReq + " " + passwordReq);
+    let query = `select UserName from safe where MobileNo =${mobileReq} and UserPassword =${passwordReq}`;
+    myconnection.query(query, (err, results, fields) => {
+        if (results.length == 0) {
+            console.log("Account is not found");
+            res.redirect("http://localhost:5173/signup");
+        } else {
+            console.log(results);
+            console.log(fields);
+            res.redirect(`http://localhost:1000/login/succesfully/${mobileReq}/${passwordReq}`);
+        }
     })
 
-    app.post("/id", (req, res) => {
-        let { userid } = req.body;
-        console.log(req.body);
-        res.send(userid);
+})
+
+app.get("/login/succesfully/:mobileHome/:passHome", (req, res) => {
+    let { mobileHome, passHome } = req.params;
+    console.log(mobileHome + " " + passHome);
+    let query1 = `select * from safe where MobileNo =${mobileHome} AND UserPassword =${passHome}`;
+    myconnection.query(query1, (err, result, fields) => {
+        if (result.length == 0) {
+            console.log("Account is not found");
+            res.send("Account is not found");
+        } else {
+
+            let results = result[0];
+            console.log(results);
+            res.render("Homepage", { results });
+        }
     })
+})
 
-    app.post("/signup", (req, res) => {
-        let { nameReq, mobileReq, emergencyReq, passwordReq } = req.body;
-        console.log(nameReq + " " + mobileReq + " " + emergencyReq + " " + passwordReq);
-        let query = "INSERT INTO safe (UserName,MobileNo,Emergency,UserPassword) VALUES ?";
-        let userData = [[nameReq, mobileReq, emergencyReq, passwordReq]];
-        myconnection.query(query, [userData], (err, results, fields) => {
-            if (err) {
-                console.log(err);
-                res.send("Account is not created" + " " + err);
-            } else {
-                console.log(results);
-                res.redirect("http://localhost:5173/webview");
-            }
-        })
+app.get("/data", (req, res) => {
+    let query1 = `select * from safe`;
+    myconnection.query(query1, (err, result, fields) => {
+        if (err) {
+            console.log(err);
+        } else {
+
+            res.send(result);
+        }
     })
-
-    app.post("/login", (req, res) => {
-        let { mobileReq, passwordReq } = req.body;
-        console.log(mobileReq + " " + passwordReq);
-        let query = `select UserName from safe where MobileNo =${mobileReq} and UserPassword =${passwordReq}`;
-        myconnection.query(query, (err, results, fields) => {
-            if (results.length == 0) {
-                console.log("Account is not found");
-                res.redirect("http://localhost:5173/signup");
-            } else {
-                console.log(results);
-                console.log(fields);
-                res.redirect(`http://localhost:1000/login/succesfully/${mobileReq}/${passwordReq}`);
-            }
-        })
-
-    })
-
-    app.get("/login/succesfully/:mobileHome/:passHome", (req, res) => {
-        let { mobileHome, passHome } = req.params;
-        console.log(mobileHome + " " + passHome);
-        let query1 = `select * from safe where MobileNo =${mobileHome} AND UserPassword =${passHome}`;
-        myconnection.query(query1, (err, result, fields) => {
-            if (result.length == 0) {
-                console.log("Account is not found");
-                res.send("Account is not found");
-            } else {
-
-                let results = result[0];
-                console.log(results);
-                res.render("Homepage", { results });
-            }
-        })
-    })
-
-    app.get("/homepage", (req, res) => {
-    })
+})
 
 
-}
-main();
