@@ -101,3 +101,7 @@ app.get("/login/succesfully/:mobileHome/:passHome",(req,res)=>{
         }
     })
 })
+
+app.get("/homepage",(req,res)=>{
+    res.render("Homepage");
+})
