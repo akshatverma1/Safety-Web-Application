@@ -11,6 +11,7 @@
   "dependencies": {
     "@bradgarropy/next-link": "^1.1.0",
     "commonjs": "^0.0.1",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "luxon": "^3.5.0",

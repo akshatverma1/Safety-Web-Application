@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 const mysql = require("mysql2");
 const { Console } = require("console");
-
+require('dotenv').config();
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
@@ -26,11 +26,21 @@ app.listen(1000, () => {
     console.log("Server is On");
 })
 const myconnection =  mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    database: "safeguard",
-    password: "2424"
+    host: process.env.MYSQL_ADDON_HOST,
+    user: process.env.MYSQL_ADDON_USER,
+    database: process.env.MYSQL_ADDON_DB,
+    password: process.env.MYSQL_ADDON_PASSWORD,
 })
+
+myconnection.connect((err) => {
+    if (err) {
+      console.error("Database connection failed:", err);
+    } else {
+      console.log("Connected to MySQL Database!");
+    }
+  });
+
+
 
 app.get("/", (req, res) => {
     res.render("index");
