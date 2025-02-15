@@ -71,6 +71,7 @@ async function main() {
                 console.log(err);
                 // res.redirect("http://localhost:5173/signupfailed")
                 res.send("Account is not created" + " " + err);
+                res.render("signupfailed");
             } else {
                 console.log(results);
                 res.redirect(`/login/succesfully/${mobileReq}/${passwordReq}`);
@@ -103,7 +104,8 @@ async function main() {
         myconnection.query(query1, (err, result, fields) => {
             if (result.length == 0) {
                 console.log("Account is not found");
-                res.send("Account is not found");
+                // res.send("Account is not found");
+                res.render("loginfailed");
             } else {
 
                 let results = result[0];

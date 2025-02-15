@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Failed</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide"></script>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-10px);
+        }
+        40% {
+          transform: translateX(10px);
+        }
+        60% {
+          transform: translateX(-10px);
+        }
+        80% {
+          transform: translateX(10px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .shake {
+        animation: shake 0.5s ease-in-out 0.3s forwards;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-black text-white flex items-center justify-center px-4">
+    <div class="fade-in max-w-md w-full space-y-8 text-center">
+      <div class="shake mx-auto">
+        <div class="bg-red-600 rounded-full p-3 inline-block">
+          <i data-lucide="alert-circle" class="w-16 h-16 text-white"></i>
+        </div>
+      </div>
+      <h2 class="mt-6 text-3xl font-extrabold">Signup Failed</h2>
+      <p class="mt-2 text-xl text-gray-400">Oops! We couldn't create your account.</p>
+      <div class="mt-8 space-y-4">
+        <p class="text-lg text-gray-300">
+          There was an issue during the signup process. Please try again.
+        </p>
+      </div>
+      <div class="mt-8 space-y-4">
+        <a
+          href="/signup"
+          class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 md:py-4 md:text-lg md:px-10 transition duration-150 ease-in-out transform hover:scale-105"
+        >
+          <i data-lucide="refresh-cw" class="w-5 h-5 mr-2"></i>
+          Retry Signup
+        </a>
+        <a
+          href="/"
+          class="w-full flex items-center justify-center px-8 py-3 border border-purple-600 text-base font-medium rounded-md text-purple-300 bg-transparent hover:bg-purple-900 md:py-4 md:text-lg md:px-10 transition duration-150 ease-in-out"
+        >
+          <i data-lucide="shield" class="w-5 h-5 mr-2"></i>
+          Back to Home
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // Initialize Lucide icons after the DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        lucide.createIcons();
+      });
+    </script>
+  </body>
+</html>
