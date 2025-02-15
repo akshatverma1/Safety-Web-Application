@@ -69,10 +69,11 @@ async function main() {
         myconnection.query(query, [userData], (err, results, fields) => {
             if (err) {
                 console.log(err);
+                // res.redirect("http://localhost:5173/signupfailed")
                 res.send("Account is not created" + " " + err);
             } else {
                 console.log(results);
-                res.redirect("https://www.akshat.life");
+                res.redirect(`/login/succesfully/${mobileReq}/${passwordReq}`);
             }
         })
     })
@@ -107,7 +108,7 @@ async function main() {
 
                 let results = result[0];
                 console.log(results);
-                res.render("Homepage", { results });
+                res.render("dash", { results });
             }
         })
     })
@@ -122,6 +123,10 @@ async function main() {
                 res.send(result);
             }
         })
+    })
+
+    app.get("/dash",(req,res)=>{
+        res.render("dash");
     })
 }
 main();
