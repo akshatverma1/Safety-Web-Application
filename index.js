@@ -85,7 +85,7 @@ async function main() {
         myconnection.query(query, (err, results, fields) => {
             if (results.length == 0) {
                 console.log("Account is not found");
-                res.redirect("https://www.akshat.life");
+                res.render("loginfailed");
             } else {
                 console.log(results);
                 console.log(fields);
