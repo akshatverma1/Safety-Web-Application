@@ -95,11 +95,13 @@
 
             <!-- Emergency Call Section -->
             <section class="mb-8">
+                <form action="tel:+91<%= results.Emergency %>">
                 <button
                     class="w-full bg-red-600 text-white py-4 rounded-lg text-lg font-bold flex items-center justify-center space-x-2 hover:bg-red-700 transition duration-300">
                     <i data-lucide="phone" class="w-6 h-6"></i>
                     <span>Emergency Call</span>
                 </button>
+            </form>
             </section>
 
             <!-- Statistics Section -->
