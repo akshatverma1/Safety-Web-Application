@@ -54,10 +54,10 @@ if (navigator.geolocation) {
         // }
         async function datafechIndore() {
             try {
-                const dataf = await fetch("./js/indoreLocation.json");
+                const dataf = await fetch("https://data-safeguard-j7t1.vercel.app/indore");
                 const datas = await dataf.json()
                 // console.log(datas.Indore_Areas);
-                const deldata = datas.Indore_Areas;
+                const deldata = datas;
                 deldata.forEach(element => {
 
                     if(latitude == element.latitude || longitude == element.longitude){
