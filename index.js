@@ -38,7 +38,7 @@ async function main() {
         uri: process.env.MYSQL_ADDON_URI,
         waitForConnections: true,
         connectionLimit: 10,
-        connectTimeout: 10000,
+        connectTimeout: 100000,
     })
 
     myconnection.connect((err) => {
