@@ -70,7 +70,7 @@ async function main() {
             if (err) {
                 console.log(err);
                 // res.redirect("http://localhost:5173/signupfailed")
-                res.send("Account is not created" + " " + err);
+                // res.send("Account is not created" + " " + err);
                 res.render("signupfailed");
             } else {
                 console.log(results);

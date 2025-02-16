@@ -22,36 +22,7 @@ if (navigator.geolocation) {
             attribution: '&copy; <a href="https://www.akshat.life">AKSHAT</a> contributors'
         }).addTo(map);
 
-        // async function datafech() {
-        //     try {
-        //         const dataf = await fetch("./js/delhiLocations.json");
-        //         const datas = await dataf.json()
-        //         console.log(datas.Delhi_Areas);
-        //         const deldata = datas.Delhi_Areas;
-        //         deldata.forEach(element => {
-        //             // console.log(element.latitude);
-        //             // L.marker([element.latitude, element.longitude],{icon: greenIcon}).addTo(map).bindPopup(element.message);
-        //             if (element.safety_grade == "A") {
-        //                 L.circle([element.latitude, element.longitude], {
-        //                     radius: 1500,
-        //                     color: "green"
-        //                 }).addTo(map).bindPopup(element.name);
-        //             }else if(element.safety_grade =="B"){
-        //                 L.circle([element.latitude, element.longitude], {
-        //                     radius: 1000,
-        //                     color: "yellow"
-        //                 }).addTo(map).bindPopup(element.name);
-        //             }else{
-        //                 L.circle([element.latitude, element.longitude], {
-        //                     radius: 1000,
-        //                     color: "red"
-        //                 }).addTo(map).bindPopup(element.name);
-        //             }
-        //         })
-        //     } catch (err) {
-        //         console.log(err);
-        //     }
-        // }
+        
         async function datafechIndore() {
             try {
                 const dataf = await fetch("https://data-safeguard-j7t1.vercel.app/indore");
@@ -96,5 +67,91 @@ if (navigator.geolocation) {
         }
         // datafech();
         datafechIndore();
+        async function datafechBhopal() {
+            try {
+                const dataf = await fetch("https://data-safeguard-j7t1.vercel.app/bhopal");
+                const datas = await dataf.json()
+                // console.log(datas.Indore_Areas);
+                const deldata = datas;
+                deldata.forEach(element => {
+
+                    if(latitude == element.latitude || longitude == element.longitude){
+                        if(element.safety_grade == "C"){
+                        console.log("You are in "+element.name);
+                        }
+                    }
+                    // console.log(element.latitude);
+                    // L.marker([element.latitude, element.longitude],{icon: greenIcon}).addTo(map).bindPopup(element.message);
+                    if (element.safety_grade == "A") {
+                        L.circle([element.latitude, element.longitude], {
+                            radius: 200,
+                            color: "green"
+                            ,weight:0,
+                            fillOpacity:0.5
+                        }).addTo(map).bindPopup(element.name);
+                    }else if(element.safety_grade =="B"){
+                        L.circle([element.latitude, element.longitude], {
+                            radius: 200,
+                            color: "yellow"
+                            ,weight:0,
+                            fillOpacity:0.5
+                        }).addTo(map).bindPopup(element.name);
+                    }else{
+                        L.circle([element.latitude, element.longitude], {
+                            radius: 200,
+                            color: "red"
+                            ,weight:0,
+                            fillOpacity:0.5
+                        }).addTo(map).bindPopup(element.name);
+                    }
+                })
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        datafechBhopal();
+        async function datafechDelhi() {
+            try {
+                const dataf = await fetch("https://data-safeguard-j7t1.vercel.app/delhi");
+                const datas = await dataf.json()
+                // console.log(datas.Indore_Areas);
+                const deldata = datas;
+                deldata.forEach(element => {
+
+                    if(latitude == element.latitude || longitude == element.longitude){
+                        if(element.safety_grade == "C"){
+                        console.log("You are in "+element.name);
+                        }
+                    }
+                    // console.log(element.latitude);
+                    // L.marker([element.latitude, element.longitude],{icon: greenIcon}).addTo(map).bindPopup(element.message);
+                    if (element.safety_grade== "A") {
+                        L.circle([element.latitude, element.longitude], {
+                            radius: 700,
+                            color: "green"
+                            ,weight:0,
+                            fillOpacity:0.5
+                        }).addTo(map).bindPopup(element.name);
+                    }else if(element.safety_grade =="B"){
+                        L.circle([element.latitude, element.longitude], {
+                            radius: 600,
+                            color: "yellow"
+                            ,weight:0,
+                            fillOpacity:0.5
+                        }).addTo(map).bindPopup(element.name);
+                    }else{
+                        L.circle([element.latitude, element.longitude], {
+                            radius: 500,
+                            color: "red"
+                            ,weight:0,
+                            fillOpacity:0.5
+                        }).addTo(map).bindPopup(element.name);
+                    }
+                })
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        datafechDelhi();
     })
 }
